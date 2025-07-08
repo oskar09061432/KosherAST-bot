@@ -39,7 +39,7 @@ def log_user(user_id, username, full_name, action):
 async def start(message: types.Message):
     log_user(message.from_user.id, message.from_user.username, message.from_user.full_name, "start")
     await message.answer(
-        "Добро пожаловать!
+        "Добро пожаловать!"
 "
         "Мы предлагаем кошерный алкоголь для частных мероприятий.
 "
