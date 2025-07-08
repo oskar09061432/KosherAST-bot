@@ -25,7 +25,8 @@ keyboard = ReplyKeyboardMarkup(
 @dp.message(CommandStart())
 async def cmd_start(message: types.Message):
     await message.answer(
-        "Добро пожаловать!\nВыберите, что вас интересует 👇",
+        "Добро пожаловать!\n"
+        "Выберите, что вас интересует 👇",
         reply_markup=keyboard
     )
 
